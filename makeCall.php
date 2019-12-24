@@ -23,6 +23,11 @@ $callerNumber = '1234567890';
 $response = new Twilio\Twiml();
 if (!isset($to) || empty($to)) {
   $response->say('Congratulations! You have just made your first call! Good bye.');
+    // Default Twilio hold music
+    $response->play("http://com.twilio.sounds.music.s3.amazonaws.com/ClockworkWaltz.mp3");
+    $response->play("http://com.twilio.sounds.music.s3.amazonaws.com/BusyStrings.mp3");
+    $response->play("http://com.twilio.sounds.music.s3.amazonaws.com/Mellotroniac_-_Flight_Of_Young_Hearts_Flute.mp3");
+    $response->play("http://com.twilio.sounds.music.s3.amazonaws.com/MARKOVICHAMP-Borghestral.mp3");
 } else if (is_numeric($to)) {
   $dial = $response->dial(
     array(
