@@ -1,6 +1,6 @@
 <?php
-$ACCOUNT_SID = 'AC***';
-$API_KEY = 'SK***';
-$API_KEY_SECRET = '***';
-$PUSH_CREDENTIAL_SID = 'CR***';
-$APP_SID = 'AP***';
+$ACCOUNT_SID = getenv('ACCOUNT_SID');
+$API_KEY = getenv('API_KEY');
+$API_KEY_SECRET = getenv('API_KEY_SECRET');
+$PUSH_CREDENTIAL_SID = getenv('PUSH_CREDENTIAL_SID');
+$APP_SID = getenv('APP_SID');
